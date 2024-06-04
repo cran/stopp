@@ -1,8 +1,8 @@
 Package: stopp
 Title: Spatio-Temporal Point Pattern Methods, Model Fitting,
         Diagnostics, Simulation, Local Tests
-Version: 0.2.3
-Date: 2024-04-17
+Version: 0.2.4
+Date: 2024-06-03
 Type: Package
 Authors@R: c(person(given = "Nicoletta", family = "D'Angelo", email = "nicoletta.dangelo@unipa.it", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8878-5986")),
 	     person(given = "Giada", family = "Adelfio", role = "aut", comment = c(ORCID = "0000-0002-3194-4296")))
@@ -13,7 +13,7 @@ Depends: R (>= 4.0.0)
 Imports: stats, graphics, KernSmooth, MASS, fields, optimx, plot3D,
         sparr, spatstat.explore, spatstat.geom, spatstat.linnet,
         spatstat.random, splancs, spatstat.model, spatstat.utils,
-        stlnpp, stpp, mgcv
+        stlnpp, stpp, mgcv, spatstat.univar
 LazyData: true
 Author: Nicoletta D'Angelo [aut, cre] (<https://orcid.org/0000-0002-8878-5986>),
   Giada Adelfio [aut] (<https://orcid.org/0000-0002-3194-4296>)
@@ -21,6 +21,6 @@ Maintainer: Nicoletta D'Angelo <nicoletta.dangelo@unipa.it>
 RoxygenNote: 7.3.1
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2024-04-17 08:05:25 UTC; nicol
+Packaged: 2024-06-03 15:33:02 UTC; nicol
 Repository: CRAN
-Date/Publication: 2024-04-18 09:30:02 UTC
+Date/Publication: 2024-06-04 09:47:54 UTC

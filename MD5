@@ -1,10 +1,10 @@
-09f76a947748edbe5e423126382d620d *DESCRIPTION
-6722c515408b7c136ea62e82a73499be *NAMESPACE
+65a4df1491699a7152291214b4422116 *DESCRIPTION
+1ea6cbcfaec26049bc2acbb94079df88 *NAMESPACE
 ad4e733f50d8f5d2cc0fa8563fb289e7 *R/globaldiag.R
 45ee588d5deb5b7795655ea489d2b546 *R/infl.R
-6551397049239a6604782557f608a096 *R/internals.R
+5e706615b2a7670602fc6bb0f445161e *R/internals.R
 4230c3c18ab4076fc6f78ce66d2a7980 *R/localSTLKinhom.R
-b6b193053324753f99f69f1522c4f881 *R/localSTLginhom.R
+ce4244ef9319003f03c6ffdeb829b394 *R/localSTLginhom.R
 9221e4a0cab86f45731bcf448d881a64 *R/localdiag.R
 b4b82867510c26dc870eef80f8a3464d *R/localplot.R
 53932cdf04b8c30600f917edfe4fb4bd *R/localsummary.R
@@ -48,7 +48,7 @@ d2e656ab7da6bc1d57d7f6c75b0f2fe5 *R/rETASlp.R
 6968f1044c9a7bb340b7bb2ebc7ceea8 *R/stlgcppm.R
 492464fb1539e0bf5f3d456aeb64d866 *R/stp.R
 3b79022d3bbe85b2d6bc5bc2312c7792 *R/stpm.R
-c8d893ec07165f572287b8e4f48f92cd *R/stppm.R
+3a7c0ef7c5ed1e4a29c281f1a23bbbce *R/stppm.R
 0039a2801e71d781c256873dec5bfdb1 *R/summary.globaldiag.R
 43ff44160a88d72b423c6b7b9ff9194c *R/summary.lista.R
 796dfd8266525d7cea1bc82b4aa84c18 *R/summary.localdiag.R
@@ -117,7 +117,7 @@ b66221097882dd0a5996510b4fe369f3 *man/stlgcppm.Rd
 f88bd7c5409aefcc7ed1125a28d747d1 *man/stopp-package.Rd
 876788b17ea17e51d5814e6ac5b77f20 *man/stp.Rd
 1905fedc5ab5983c5c36be648ef47e3c *man/stpm.Rd
-e27411eda9275898870f1e27d0e86b53 *man/stppm.Rd
+275fa81a61cabcfc7b325790286269be *man/stppm.Rd
 310a1bd04dbbd82de9099ebd073a4a3c *man/summary.globaldiag.Rd
 e1b983cdd6c48343e1ed49c171a2d23d *man/summary.lista.Rd
 2c2be749f777ae544439d088ba41781b *man/summary.localdiag.Rd

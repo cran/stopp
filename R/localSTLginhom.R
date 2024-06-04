@@ -122,8 +122,8 @@ localSTLginhom = function(x, lambda, normalize = FALSE, r = NULL, t = NULL, nxy 
     for (i in 1:length(r)) {
       for (j in 1:length(t)) {
 
-        outl <- spatstat.explore::dkernel(as.numeric(sdist[!no] - r[i]), sd = bwl)
-        outt <- spatstat.explore::dkernel(as.numeric(tdist[!no] - t[j]), sd = bwt)
+        outl <- spatstat.univar::dkernel(as.numeric(sdist[!no] - r[i]), sd = bwl)
+        outt <- spatstat.univar::dkernel(as.numeric(tdist[!no] - t[j]), sd = bwt)
         g1 <- outl * outt / (edgetl[!no])
         no2 <- no
         no2[no] <- NA

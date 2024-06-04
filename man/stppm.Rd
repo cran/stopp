@@ -7,6 +7,7 @@
 stppm(
   X,
   formula,
+  formula_mark = NULL,
   covs = NULL,
   marked = FALSE,
   spatial.cov = FALSE,
@@ -29,6 +30,8 @@ stppm(
 a symbolic description of the model to be fitted.
 The current version only supports formulas depending on the spatial and temporal coordinates:
 \code{x}, \code{y}, \code{t}.}
+
+\item{formula_mark}{An object of class \code{"formula"}}
 
 \item{covs}{A list containing \code{stcov} objects of possible spatio-temporal covariates.
 It is advisable to construct the \code{stcov} objects with \code{stcov}. 

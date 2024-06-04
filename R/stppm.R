@@ -24,6 +24,7 @@
 #' a symbolic description of the model to be fitted.
 #' The current version only supports formulas depending on the spatial and temporal coordinates:
 #' \code{x}, \code{y}, \code{t}.
+#' @param formula_mark An object of class \code{"formula"}
 #' @param covs A list containing \code{stcov} objects of possible spatio-temporal covariates.
 #' It is advisable to construct the \code{stcov} objects with \code{stcov}. 
 #' Each \code{stcov} object should contain the spatio-temporal coordinates and the
@@ -123,7 +124,7 @@
 #'
 #' D'Angelo, N., Adelfio, G., and Mateu, J. (2023). Locally weighted minimum contrast estimation for spatio-temporal log-Gaussian Cox processes. Computational Statistics & Data Analysis, 180, 107679.
 #'
-stppm <- function(X, formula, covs = NULL, marked = FALSE, spatial.cov = FALSE,
+stppm <- function(X, formula, formula_mark = NULL, covs = NULL, marked = FALSE, spatial.cov = FALSE,
                   verbose = FALSE, mult = 4, interp = TRUE,
                   parallel = FALSE, sites = 1, seed = NULL, ncube = NULL,
                   grid = FALSE, ncores = 2, lsr = FALSE){
@@ -156,6 +157,10 @@ stppm <- function(X, formula, covs = NULL, marked = FALSE, spatial.cov = FALSE,
       stop("ncube should be ncube > 0")
     }
   } }
+  
+  if(is.null(formula_mark)){
+    formula_mark <- formula
+  }
   
   X0 <- X
   X <- X$df
@@ -230,7 +235,7 @@ stppm <- function(X, formula, covs = NULL, marked = FALSE, spatial.cov = FALSE,
     dati.interpolati <- interp.covariate(X, dummy_points, covs, formula, parallel,
                                          interp, xx, xy, xt, ncores, verbose = verbose)
     
-    marked.process <- dummy.marked.result(X, formula, dummy_points, Wdum, Wdat, ndata, ndummy)
+    marked.process <- dummy.marked.result(X, formula = formula_mark, dummy_points, Wdum, Wdat, ndata, ndummy)
     
     z <- c(rep(1, ndata), rep(0, length(marked.process$dumb$data$x)))
     w_final <- c(w[1:ndata], marked.process$Wdumb)
@@ -273,7 +278,7 @@ stppm <- function(X, formula, covs = NULL, marked = FALSE, spatial.cov = FALSE,
     
   } else if(marked == T & spatial.cov == F) {
     
-    marked.process <- dummy.marked.result(X, formula, dummy_points, Wdum, Wdat, ndata, ndummy)
+    marked.process <- dummy.marked.result(X, formula = formula_mark, dummy_points, Wdum, Wdat, ndata, ndummy)
     
     z <- c(rep(1, ndata), rep(0, length(marked.process$dumb$data$x)))
     w_final <- c(w[1:ndata], marked.process$Wdumb)
