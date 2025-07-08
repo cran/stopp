@@ -26,7 +26,7 @@ spatio-temporal point pattern is plotted.}
 \description{
 This function plots the point pattern on a linear network
  stored in the \code{stlp} object given in input,
-in a three panel plot representing the \link{plot3D} of the coordinates, and the
+in a three panel plot representing the \link[plot3D]{plot3D} of the coordinates, and the
 marginal spatial and temporal coordinates.
 }
 \examples{

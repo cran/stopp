@@ -1,0 +1,14 @@
+bibentry(bibtype = "Article",
+  title        = "{stopp}: An {R} Package for Spatio-Temporal Point Pattern Analysis",
+  author       = c(person(given = "Nicoletta",
+                          family = "D'Angelo",
+                          email = "nicoletta.dangelo@unipa.it"),
+                   person(given = "Giada",
+                          family = "Adelfio")),
+  journal      = "Journal of Statistical Software",
+  year         = "2025",
+  volume       = "113",
+  number       = "10",
+  pages        = "1--35"
+)
+

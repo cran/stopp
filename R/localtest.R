@@ -31,7 +31,7 @@
 #'    Siino et al. (2018), that is, on an object of class \code{stp}, the LISTA
 #'    functions \eqn{\hat{L}^{(i)}} employed are the local functions of
 #'    Adelfio et al. (2020), documented in
-#'  \link{KLISTAhat} and \link{LISTAhat} of the \code{stpp} package (Gabriel et al, 2013).
+#'  \link[stpp]{KLISTAhat} and \link[stpp]{LISTAhat} of the \code{stpp} package (Gabriel et al, 2013).
 #'
 #'  If the function is applied to a \code{stlp} object, that is, on two spatio-temporal
 #'  point patterns observed on the same linear network \code{L}, the LISTA function

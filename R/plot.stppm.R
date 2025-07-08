@@ -8,9 +8,9 @@
 #'  spatial scale of the data.
 #'  Either a character string, \code{"silverman"} (default), \code{"IQR"},
 #'   \code{"sd"}, or \code{"var"};
-#'  or positive numeric value(s). See \link{OS}.
+#'  or positive numeric value(s). See \link[sparr]{OS}.
 #' @param do.points Add points to plot
-#' @param print.bw It prints the estimated oversmoothing (\link{OS}) bandwidth selector
+#' @param print.bw It prints the estimated oversmoothing (\link[sparr]{OS}) bandwidth selector
 #' @param zap Noise threshold factor (default to 0.00001). A numerical value greater than or equal to 1.
 #'  If the range of pixel values is less than \code{zap * .Machine$double.eps},
 #'   the image will be treated as constant. This avoids displaying images which

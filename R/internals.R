@@ -17,6 +17,7 @@
   max(5, guess.ngrid)
 }
 
+#' @export
 density.new.var  <-function(x,np,gx){
   nx  <-  length(x)
   n <- length(gx)
@@ -543,6 +544,7 @@ is.stlp <- function(x){
   inherits(x,"stlp")
 }
 
+#' @export
 localplot.stlgcppm <- function(x, par = TRUE){
 
   if(inherits(x$IntCoefs, "numeric") & inherits(x$CovCoefs, "numeric")){
@@ -757,6 +759,7 @@ localplot.stlgcppm <- function(x, par = TRUE){
   
 }
 
+#' @export
 localplot.locstppm <- function(x, par = TRUE){
 
   oldpar <- par(no.readonly = TRUE)
@@ -814,6 +817,7 @@ localplot.locstppm <- function(x, par = TRUE){
   
 }
 
+#' @export
 localsummary.stlgcppm <- function(x,
                                   scaler = c("silverman", "IQR", "sd", "var"),
                                   do.points = TRUE,
@@ -990,6 +994,7 @@ localsummary.stlgcppm <- function(x,
   if(print.bw == T){print(sig)}
 }
 
+#' @export
 localsummary.locstppm <- function(x,
                                   scaler = c("silverman", "IQR", "sd", "var"),
                                   do.points = TRUE,

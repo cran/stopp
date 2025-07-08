@@ -11,12 +11,12 @@
 #' If applied to a \code{stp} object, it resorts to  the
 #' spatio-temporal inhomogeneous K-function (Gabriel and Diggle, 2009)
 #'  documented by the function
-#'  \link{STIKhat}  of the \code{stpp} package (Gabriel et al, 2013).
+#'  \link[stpp]{STIKhat}  of the \code{stpp} package (Gabriel et al, 2013).
 #'
 #'  If applied to a \code{stlp} object, it uses the
 #' spatio-temporal inhomogeneous K-function on a linear network (Moradi and Mateu, 2020)
 #'  documented by the function
-#'  \link{STLKinhom}  of the \code{stlnpp} package (Moradi et al., 2020).
+#'  \link[stlnpp]{STLKinhom}  of the \code{stlnpp} package (Moradi et al., 2020).
 #'
 #'
 #' @param x A \code{stp} object

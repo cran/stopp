@@ -9,7 +9,7 @@ sepstlppm(x, spaceformula, timeformula)
 \arguments{
 \item{x}{A \code{stlpm} object}
 
-\item{spaceformula}{A formula for the spatial component. See \link{lppm} for details}
+\item{spaceformula}{A formula for the spatial component. See \link[spatstat.linnet]{lppm} for details}
 
 \item{timeformula}{A formula for the temporal component. It fits a log-linear model with the \link{glm} function}
 }

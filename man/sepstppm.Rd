@@ -9,7 +9,7 @@ sepstppm(x, spaceformula, timeformula)
 \arguments{
 \item{x}{A \code{stpm} object}
 
-\item{spaceformula}{A formula for the spatial component. See \link{ppm} for details}
+\item{spaceformula}{A formula for the spatial component. See \link[spatstat.model]{ppm} for details}
 
 \item{timeformula}{A formula for the temporal component. It fits a log-linear model with the \link{glm} function}
 }

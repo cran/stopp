@@ -60,7 +60,7 @@ D’Angelo, N., Adelfio, G., and Mateu, J. (2021). Assessing local differences b
 D’Angelo, N., Adelfio, G.,  and Mateu, J. (2022). Local inhomogeneous second-order characteristics for spatio-temporal point processes on linear networks. Stat Papers. https://doi.org/10.1007/s00362-022-01338-4
 }
 \seealso{
-\link{localSTLginhom}, \link{STLKinhom}, \link{STLginhom}
+\link{localSTLginhom}, \link[stlnpp]{STLKinhom}, \link[stlnpp]{STLginhom}
 }
 \author{
 Nicoletta D'Angelo

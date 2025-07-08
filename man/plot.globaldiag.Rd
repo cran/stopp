@@ -16,7 +16,7 @@ different scale. Default to \code{TRUE}.}
 \item{...}{additional unused argument}
 }
 \value{
-It plots three panels: the observed K-function, as returned by \link{STLKinhom};
+It plots three panels: the observed K-function, as returned by \link[stlnpp]{STLKinhom};
 the theoretical one; their difference. The function also prints the sum of
  squared differences between the observed and theoretical
 K-function on the console.

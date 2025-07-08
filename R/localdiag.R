@@ -49,7 +49,7 @@
 #' Note that the Euclidean procedure is implemented by the
 #' local K-functions of
 #'    Adelfio et al. (2020), documented in
-#'  \link{KLISTAhat} of the \code{stpp} package (Gabriel et al, 2013).
+#'  \link[stpp]{KLISTAhat} of the \code{stpp} package (Gabriel et al, 2013).
 #' The network case uses  the local K-functions on networks (D'Angelo et al., 2021),
 #'  documented
 #' in  \link{localSTLKinhom}.

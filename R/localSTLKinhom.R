@@ -24,7 +24,7 @@
 #'
 #' @author Nicoletta D'Angelo
 #'
-#' @seealso \link{localSTLginhom}, \link{STLKinhom}, \link{STLginhom}
+#' @seealso \link{localSTLginhom}, \link[stlnpp]{STLKinhom}, \link[stlnpp]{STLginhom}
 #'
 #'
 #' @examples

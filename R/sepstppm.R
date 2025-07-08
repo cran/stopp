@@ -1,7 +1,7 @@
 #' Fit a separable spatio-temporal Poisson process model
 #'
 #' @param x A \code{stpm} object
-#' @param spaceformula A formula for the spatial component. See \link{ppm} for details
+#' @param spaceformula A formula for the spatial component. See \link[spatstat.model]{ppm} for details
 #' @param timeformula A formula for the temporal component. It fits a log-linear model with the \link{glm} function
 #'
 #' @return An object of class \code{sepstppm}
